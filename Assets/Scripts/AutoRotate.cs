@@ -24,7 +24,7 @@ public class AutoRotate : MonoBehaviour
         angle *= dt;
 
         if (GameController.Instance)
-            angle *= GameController.Instance.Speed;
+            angle *= GameController.Instance.speed;
         
         this.transform.Rotate(Vector3.up, angle, Space.Self);
     }

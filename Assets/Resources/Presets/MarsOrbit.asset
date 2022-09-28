@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb673b9f47f5964a9c9b32ca61ea967, type: 3}
   m_Name: MarsOrbit
   m_EditorClassIdentifier: 
-  OrbitalSpeed: 5
+  OrbitalSpeed: 50
   OrbitRadius: 800

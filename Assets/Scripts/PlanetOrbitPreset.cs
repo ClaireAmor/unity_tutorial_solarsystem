@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class PlanetOrbitPreset : ScriptableObject
 {
-    [Range(-100,100)]
+    [Range(-10000,10000)]
     [Tooltip("Speed of rotation of the orbit in dregrees per second")]
     public float OrbitalSpeed;
 
