@@ -228,6 +228,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &352352874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2032223054406742819, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}
+  m_PrefabInstance: {fileID: 363216533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &363216533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -238,10 +243,6 @@ PrefabInstance:
     - target: {fileID: 2032223054406742819, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}
       propertyPath: m_Name
       value: Earth
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170846300135474366, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}
-      propertyPath: speed
-      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 7975275887871416924, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}
       propertyPath: m_RootOrder
@@ -294,6 +295,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6533058677560602616, guid: e168ba1291ada014d9f2082b6375c16f, type: 3}
   m_PrefabInstance: {fileID: 1856645529}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &508910482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7525567887453582169, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}
+  m_PrefabInstance: {fileID: 363216533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &508910484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508910482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b13bfb79aaf74fbc49aa74d0b86d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preset: {fileID: 11400000, guid: 8b6c5f3272f8ca8489eb760ef7c6b202, type: 2}
+  Planet: {fileID: 1728876467}
 --- !u!4 &522279311
 Transform:
   m_ObjectHideFlags: 0
@@ -465,7 +485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 522279311}
-  - component: {fileID: 710734672}
+  - component: {fileID: 710734673}
   m_Layer: 0
   m_Name: earth_orbit
   m_TagString: Untagged
@@ -473,7 +493,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &710734672
+--- !u!114 &710734673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -482,10 +502,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 710734671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 827ee55e7a5e17a4992be3939433c4d7, type: 3}
+  m_Script: {fileID: 11500000, guid: c19b13bfb79aaf74fbc49aa74d0b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  preset: {fileID: 11400000, guid: 429d483ec5751764c99afdb56132d6d0, type: 2}
+  Planet: {fileID: 352352874}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,10 +617,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1024464663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 827ee55e7a5e17a4992be3939433c4d7, type: 3}
+  m_Script: {fileID: 11500000, guid: c19b13bfb79aaf74fbc49aa74d0b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  preset: {fileID: 11400000, guid: a11fa7a4a791db945bf3f2fadbf9412a, type: 2}
+  Planet: {fileID: 1893808184}
 --- !u!1 &1727197722
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +656,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1728876467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1198529302750760150, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}
+  m_PrefabInstance: {fileID: 363216533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1856645529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -691,6 +718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e168ba1291ada014d9f2082b6375c16f, type: 3}
+--- !u!1 &1893808184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2896977239870391943, guid: e168ba1291ada014d9f2082b6375c16f, type: 3}
+  m_PrefabInstance: {fileID: 1856645529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1902921410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7975275887871416924, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}
