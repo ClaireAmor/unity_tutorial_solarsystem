@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OrbitalSpeed: 100
   OrbitRadius: 500
+  PlanetPrefab: {fileID: 2032223054406742819, guid: ad92ee8d0b2c55e42bd0797936c72483, type: 3}

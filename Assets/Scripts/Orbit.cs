@@ -6,14 +6,15 @@ public class Orbit : MonoBehaviour
 {
     public PlanetOrbitPreset preset;
     [Tooltip("Child planet to move")]
-    public GameObject Planet;
+    private GameObject Planet;
 
     private float allAngle;
     
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<AutoRotate>().speed = this.preset.OrbitalSpeed;
+        this.Planet = GameObject.Instantiate(preset.PlanetPrefab, this.transform);
+        this.Planet.name = preset.PlanetPrefab.name;
     }
     
     // Update is called once per frame
@@ -41,15 +42,13 @@ public class Orbit : MonoBehaviour
         
         this.transform.Rotate(Vector3.up, angle, Space.Self);
         
-        float message = allAngle += angle;
-        int totalYear = (int) message/ 360;
-        if (this.gameObject.name == "earth_orbit")
-            Debug.Log("La terre a fait " + totalYear);
+        allAngle += angle;
     }
 
     void NumberOfYear()
     {
-       
-        
+        int totalYear = (int) allAngle/ 360;
+        if (this.gameObject.name == "earth_orbit")
+            Debug.Log("La terre a fait " + totalYear);
     }
 }

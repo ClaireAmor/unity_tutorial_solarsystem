@@ -30,14 +30,18 @@ public class InputController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Initialize the singleton instance if not set yet
-        if (InputController.Instance == null)
-            InputController.Instance = this;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        // RaycastHit hitinfo;
+        // bool hit = Physics.Raycast(ray, out hitinfo, float.MaxValue);
+        // if (hit && hitinfo.collider != null)
+        //
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (this.OnUserInput != null)
